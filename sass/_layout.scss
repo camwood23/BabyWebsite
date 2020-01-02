@@ -1,27 +1,40 @@
 .splash_screen {
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/baby_splash.jpg);
-    background-size: cover;
-    background-position: center;
+    font-family: 'Amatic SC', cursive;
 
+    transition: opacity .3s;
     position: fixed;
-    top: 0;
-    left: 0;
-    transition: .5s all;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     &__link {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translateX(-50%);
-
         color: black;
-        font-size: 5rem;
+        font-size: 3rem;
+        text-decoration: none;
 
         .container__main:target + .splash_screen > & {
             display: none;
         }
+    }
+
+    &__heading {
+        &_primary {
+            font-size: 6rem;
+            font-weight: 400;
+        }
+        
+        &_secondary {
+            font-size: 4rem;
+            font-weight: 500;
+        }
+    }
+
+    &__img {
+        margin: 4rem 0;
     }
 
     .container__main:target + & {
@@ -37,7 +50,7 @@
         height: 100vh;
         display: none;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-direction: column;
 
         &:target {
@@ -57,29 +70,17 @@
     }
 
     &__btn {
-        border: none;
         box-shadow: .5rem .5rem .5rem rgba(#000000, .4);
         padding: 2rem 3rem;
         font-size: 2rem;
-        border-radius: 20px;
+        border-radius: 3px;
         transition: .2s all;
+        background-color: white;
 
         &:hover {
             transform: translateY(-.2rem);
             box-shadow: .5rem .6rem .7rem rgba(#000000, .4);
         }
-
-        &__boy {
-            background-color: blue;
-        }
-        
-        &__girl {
-            background-color: pink;
-        }
-    }
-
-    &__chart {
-        margin: 3rem 0;
     }
 }
 

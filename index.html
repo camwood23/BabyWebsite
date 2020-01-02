@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Shadows+Into+Light&display=swap" rel="stylesheet">
     <script src="https://code.highcharts.com/highcharts.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
     <title>We're Having A Baby</title>
 </head>
 <body>
-    <canvas id="myChart" class="" width="100" height="100"></canvas>
     <div id="main" class="container__main">
         <section class="guess_gender">
             <h2 class="baby_names__heading">Guess Gender</h2>
@@ -18,7 +18,6 @@
                 <input type="button" value="Boy" class="guess_gender__btn guess_gender__btn__boy">
                 <input type="button" value="Girl" class="guess_gender__btn guess_gender__btn__girl">
             </div>
-            <div id="chart-container" class="guess_gender__chart"></div>
         </section>
         <section class="baby_names">
             <div class="baby_names__boys">
@@ -41,7 +40,10 @@
         </section>
     </div>
     <div class="splash_screen">
-        <a href="#main" class="splash_screen__link">Help Pick A Name&rarr;</a>
+        <h1 class="splash_screen__heading_primary">Baby Wood</h1>
+        <h2 class="splash_screen__heading_secondary">Sept 5, 2020</h2>
+        <img src="img/sonogram.jpg" alt="Backdrop Image" class="splash_screen__img">
+        <a href="#main" class="splash_screen__link">Help Pick A Name</a>
     </div>
 
     <script src="js/chart.js"></script>
