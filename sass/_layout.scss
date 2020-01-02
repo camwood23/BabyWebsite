@@ -1,0 +1,100 @@
+.splash_screen {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/baby_splash.jpg);
+    background-size: cover;
+    background-position: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s all;
+
+    &__link {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        color: black;
+        font-size: 5rem;
+
+        .container__main:target + .splash_screen > & {
+            display: none;
+        }
+    }
+
+    .container__main:target + & {
+        opacity: 0;
+        z-index: -1;
+        height: 0;
+    }
+}
+
+.container {
+    &__main {
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        &:target {
+            display: flex;
+        }
+    }
+}
+
+.guess_gender {
+    flex-direction: column;
+
+    &__btn_group {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__btn {
+        border: none;
+        box-shadow: .5rem .5rem .5rem rgba(#000000, .4);
+        padding: 2rem 3rem;
+        font-size: 2rem;
+        border-radius: 20px;
+        transition: .2s all;
+
+        &:hover {
+            transform: translateY(-.2rem);
+            box-shadow: .5rem .6rem .7rem rgba(#000000, .4);
+        }
+
+        &__boy {
+            background-color: blue;
+        }
+        
+        &__girl {
+            background-color: pink;
+        }
+    }
+
+    &__chart {
+        margin: 3rem 0;
+    }
+}
+
+.baby_names {
+    font-size: 2rem;
+    padding: 10rem;
+
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    &__list {
+        margin: 1rem;
+        padding: 1rem;
+        list-style: none;
+    }
+}
