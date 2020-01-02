@@ -31,10 +31,12 @@ Highcharts.chart('chart-container', {
         colorByPoint: true,
         data: [{
             name: 'Girl',
-            y: 10
+            y: 10,
+            color: "#ffc0cb"
         }, {
             name: 'Boy',
-            y: 5
+            y: 5,
+            color: "#0000ff"
         }]
     }]
 });
