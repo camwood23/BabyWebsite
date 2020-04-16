@@ -1,101 +1,19 @@
-.splash_screen {
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Amatic SC', cursive;
+.heading {
+  &_primary {
+    font-size: 6rem;
+    font-weight: 400;
+  }
 
-    transition: opacity .3s;
-    position: fixed;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    &__link {
-        color: black;
-        font-size: 3rem;
-        text-decoration: none;
-
-        .container__main:target + .splash_screen > & {
-            display: none;
-        }
-    }
-
-    &__heading {
-        &_primary {
-            font-size: 6rem;
-            font-weight: 400;
-        }
-        
-        &_secondary {
-            font-size: 4rem;
-            font-weight: 500;
-        }
-    }
-
-    &__img {
-        margin: 4rem 0;
-    }
-
-    .container__main:target + & {
-        opacity: 0;
-        z-index: -1;
-        height: 0;
-    }
+  &_secondary {
+    font-size: 4rem;
+    font-weight: 500;
+  }
 }
 
 .container {
-    &__main {
-        width: 100vw;
-        height: 100vh;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        &:target {
-            display: flex;
-        }
-    }
-}
-
-.guess_gender {
-    flex-direction: column;
-
-    &__btn_group {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    &__btn {
-        box-shadow: .5rem .5rem .5rem rgba(#000000, .4);
-        padding: 2rem 3rem;
-        font-size: 2rem;
-        border-radius: 3px;
-        transition: .2s all;
-        background-color: white;
-
-        &:hover {
-            transform: translateY(-.2rem);
-            box-shadow: .5rem .6rem .7rem rgba(#000000, .4);
-        }
-    }
-}
-
-.baby_names {
-    font-size: 2rem;
-    padding: 10rem;
-
-    &__heading {
-        font-size: 2.5rem;
-        font-weight: 700;
-    }
-
-    &__list {
-        margin: 1rem;
-        padding: 1rem;
-        list-style: none;
-    }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
