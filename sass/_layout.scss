@@ -40,7 +40,7 @@
 }
 
 .divider {
-  background-image: linear-gradient(
+  background: linear-gradient(
     to left,
     transparent 0%,
     #000 25%,
@@ -51,13 +51,6 @@
   width: 77rem;
 
   margin: 5rem 0;
-
-  &::before {
-    content: "";
-    // background-color: #fff;
-    border-bottom-right-radius: 2rem;
-    border-top-right-radius: 2rem;
-  }
 }
 
 #timer {

@@ -62,14 +62,10 @@ body {
   flex-direction: column; }
 
 .divider {
-  background-image: linear-gradient(to left, transparent 0%, #000 25%, #000 75%, transparent 100%);
+  background: linear-gradient(to left, transparent 0%, #000 25%, #000 75%, transparent 100%);
   height: 2px;
   width: 77rem;
   margin: 5rem 0; }
-  .divider::before {
-    content: "";
-    border-bottom-right-radius: 2rem;
-    border-top-right-radius: 2rem; }
 
 #timer {
   margin-top: 5rem; }
