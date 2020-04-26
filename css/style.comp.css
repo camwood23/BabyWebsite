@@ -109,7 +109,8 @@ body {
     display: block; }
 
 .link {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
 
 .hamburger {
   position: relative;
