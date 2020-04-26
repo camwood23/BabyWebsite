@@ -9,46 +9,43 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>We're Having A Baby</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="heading_primary">Baby Wood</h1>
-      <h2 class="heading_secondary">Sept 5, 2020</h2>
-      <img src="img/sonogram.jpg" alt="Backdrop Image" class="heading__img" />
-      <div id="timer" class="heading_primary"></div>
+      <div class="heading_secondary">EXPECTANT PARENTS</div>
+      <div class="divider"></div>
+      <div class="heading_primary">MELITTA &amp; CAMERON</div>
+      <div class="divider"></div>
+      <div class="heading_tertiary">
+        Baby Wood is expected this Sept. 2020
+      </div>
+      <div id="timer" class="heading_tertiary"></div>
     </div>
 
-    <script>
-      var countDownDate = new Date(2020, 4, 2).getTime();
+    <div class="menu-btn">
+      <div class="menu-btn__clickable">
+        <span class="text">Menu</span>
+        <div class="hamburger"></div>
+      </div>
+      <ul class="link_list">
+        <li>Coming&nbsp;Soon...</li>
+        <li>
+          <a href="#registry" class="link">Registry</a>
+        </li>
+        <li>
+          <a href="#photos" class="link">Pictures</a>
+        </li>
+      </ul>
+    </div>
 
-      var x = setInterval(function () {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById("timer").innerHTML =
-          "Gender Reveal: " +
-          days +
-          "d " +
-          hours +
-          "h " +
-          minutes +
-          "m " +
-          seconds +
-          "s ";
-
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("timer").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
