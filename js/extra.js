@@ -21,8 +21,8 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML =
-      "Whoops, you didn't get all the changes. Try re-loading the page and clearing your cache!";
+    // Don't read the source code you cheater!!
+    document.getElementById("timer").innerHTML = "It's A Boy!!";
   }
 }, 1000);
 
