@@ -21,7 +21,8 @@ var x = setInterval(function () {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
+    // Don't read the source code you cheater!!
+    document.getElementById("timer").innerHTML = "It's A Boy!!";
   }
 }, 1000);
 
