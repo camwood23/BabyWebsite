@@ -22,7 +22,7 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("timer").innerHTML =
-      "Whoops, you didn't get all the changes. Try re-loading the page and clearing your cache!";
+      '<a class="link" href="/gender">Click Here To Reveal Gender!</a>';
   }
 }, 1000);
 
