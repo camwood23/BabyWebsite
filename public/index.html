@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Amatic+SC|Shadows+Into+Light&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>We're having a Baby!</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600&display=swap"
@@ -16,19 +13,16 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>We're Having A Baby</title>
   </head>
   <body>
-    <div class="container">
-      <div class="heading_secondary">EXPECTANT PARENTS</div>
-      <div class="divider"></div>
-      <div class="heading_primary">MELITTA &amp; CAMERON</div>
-      <div class="divider"></div>
-      <div class="heading_tertiary">
-        Baby Wood is expected this Sept. 2020
-      </div>
-      <div id="timer" class="heading_tertiary"></div>
-    </div>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
 
     <div class="menu-btn">
       <div class="menu-btn__clickable">
@@ -46,6 +40,7 @@
       </ul>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/extra.js"></script>
+    <!-- built files will be auto injected -->
   </body>
 </html>
