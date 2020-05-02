@@ -1,7 +1,8 @@
 .heading {
   &_primary {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 400;
+    font-family: "Playfair Display", serif;
 
     @include respond(xsm) {
       font-weight: 500;
@@ -9,8 +10,8 @@
   }
 
   &_secondary {
-    font-size: 4rem;
-    font-weight: 300;
+    font-size: 3rem;
+    font-weight: 500;
 
     @include respond(xsm) {
       font-weight: 400;
@@ -18,7 +19,7 @@
   }
 
   &_tertiary {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 300;
 
     @include respond(xsm) {
@@ -62,7 +63,7 @@
   top: 2rem;
   right: 2rem;
   padding: 1.5rem;
-  width: 20rem;
+  width: 25rem;
 
   display: flex;
   flex-direction: column;
@@ -76,8 +77,9 @@
   }
 
   & .text {
-    font-size: 4rem;
-
+    font-size: 3.5rem;
+    font-family: "Playfair Display", serif;
+    margin-right: 0.5rem;
     @include respond(xxsm) {
       font-size: 5rem;
     }
@@ -101,7 +103,7 @@
 }
 
 .active {
-  width: 25rem;
+  width: 30rem;
 
   @include respond(xxsm) {
     width: 30rem;
