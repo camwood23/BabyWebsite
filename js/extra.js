@@ -21,8 +21,8 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    // Don't read the source code you cheater!!
-    document.getElementById("timer").innerHTML = "It's A Boy!!";
+    document.getElementById("timer").innerHTML =
+      '<a class="link" href="/gender">Click Here To Reveal Gender!</a>';
   }
 }, 1000);
 
