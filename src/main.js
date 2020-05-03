@@ -5,28 +5,20 @@ import BabyGender from "./BabyGender";
 Vue.config.productionTip = false;
 
 const routes = {
-  "#": App,
-  "#gender": BabyGender,
+  "/": App,
+  "/gender": BabyGender,
 };
 
 new Vue({
   data: {
-    currentRoute: window.location.hash,
+    currentRoute: window.location.pathname,
   },
   computed: {
     ViewComponent() {
-      return this.currentRoute ? routes[this.currentRoute] : routes["#"];
+      return routes[this.currentRoute];
     },
   },
   render(h) {
     return h(this.ViewComponent);
   },
 }).$mount("#app");
-
-window.addEventListener(
-  "hashchange",
-  function () {
-    location.reload();
-  },
-  false
-);
