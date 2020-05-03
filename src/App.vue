@@ -5,7 +5,9 @@
     <div class="heading_primary">MELITTA &amp; CAMERON</div>
     <div class="divider"></div>
     <div class="heading_tertiary">Baby Wood is expected this Sept. 2020</div>
-    <div id="timer" class="heading_tertiary"></div>
+    <div id="timer" class="heading_tertiary">
+      <a class="link" href="/gender">Click Here To Reveal Gender!</a>
+    </div>
   </div>
 </template>
 
