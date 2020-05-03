@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "concurrently npm:serve npm:watch:sass",
     "serve": "vue-cli-service serve",
     "build": "npm-run-all build:css build:vue build:netlify",
     "build:vue": "vue-cli-service build",
@@ -15,6 +16,7 @@
     "watch:sass": "node-sass src/sass/main.scss public/css/style.css -w"
   },
   "dependencies": {
+    "concurrently": "^5.2.0",
     "copyfiles": "^2.2.0",
     "core-js": "^3.6.4",
     "vue": "^2.6.11"

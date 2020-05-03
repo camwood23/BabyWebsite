@@ -84,21 +84,21 @@
       font-size: 5rem;
     }
   }
+}
 
-  & .link_list {
-    display: none;
-    list-style: none;
-    font-size: 3rem;
+.link_list {
+  display: none;
+  list-style: none;
+  font-size: 3rem;
+  margin-top: 1rem;
+  align-self: flex-start;
+
+  @include respond(xxsm) {
+    font-size: 4rem;
+  }
+
+  & li {
     margin-top: 1rem;
-    align-self: flex-start;
-
-    @include respond(xxsm) {
-      font-size: 4rem;
-    }
-
-    & li {
-      margin-top: 1rem;
-    }
   }
 }
 
