@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "npm-run-all build:css build:vue",
+    "build": "npm-run-all build:css build:vue build:netlify",
     "build:vue": "vue-cli-service build",
+    "build:netlify": "copyfiles _redirects dist/.",
     "lint": "vue-cli-service lint",
     "compile:sass": "node-sass src/sass/main.scss public/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" public/css/style.comp.css -o public/css/style.prefix.css",
@@ -14,6 +15,7 @@
     "watch:sass": "node-sass src/sass/main.scss public/css/style.css -w"
   },
   "dependencies": {
+    "copyfiles": "^2.2.0",
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
   },
