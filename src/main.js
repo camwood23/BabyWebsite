@@ -3,6 +3,7 @@ import App from "./App.vue";
 import BabyGender from "./BabyGender";
 import Registry from "./components/Registry";
 import Pictures from "./components/Pictures";
+import Admin from "./components/Admin";
 
 Vue.config.productionTip = false;
 
@@ -11,6 +12,7 @@ const routes = {
   "/gender": BabyGender,
   "/registry": Registry,
   "/photos": Pictures,
+  "/registry/admin": Admin,
 };
 
 new Vue({
