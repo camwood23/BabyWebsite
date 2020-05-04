@@ -51,7 +51,7 @@ export default {
   /* border-radius: 50%; */
   padding: 0rem 0.3rem;
   font-size: 1.5rem;
-  width: 1.5rem;
+  width: 2rem;
   height: 2rem;
   margin-right: 1rem;
   cursor: pointer;

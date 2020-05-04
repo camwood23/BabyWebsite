@@ -78,6 +78,6 @@ export default {
 
 .info_text {
   font-size: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 </style>
