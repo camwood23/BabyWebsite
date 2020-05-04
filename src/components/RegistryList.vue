@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
 .registry-section {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 .link_list {
   display: block;
