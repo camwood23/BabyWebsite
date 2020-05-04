@@ -89,12 +89,12 @@
 .link_list {
   display: none;
   list-style: none;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 1rem;
   align-self: flex-start;
 
   @include respond(xxsm) {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   & li {
@@ -103,10 +103,10 @@
 }
 
 .active {
-  width: 9rem;
+  width: 10rem;
 
   @include respond(xxsm) {
-    width: 11rem;
+    width: 14rem;
   }
 
   & .link_list {

@@ -33,7 +33,7 @@ export default {
 .line {
   position: fixed;
   top: 0;
-  right: 11rem;
+  right: 12rem;
   height: 30vh;
   width: 2px;
   background-color: #000;
@@ -42,7 +42,7 @@ export default {
 
 @media only screen and (max-width: 28.125em) {
   .line {
-    right: 14rem;
+    right: 16rem;
   }
 }
 

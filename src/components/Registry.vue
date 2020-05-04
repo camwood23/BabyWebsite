@@ -2,17 +2,11 @@
   <div>
     <sub-page title="Registry">
       <p class="info_text">
-        If you purchase an item, you can click the check mark to cross it off
+        If you purchase an item, you can click the underscore to check it off
         the list
       </p>
-      <registry-list
-        title="Essentials"
-        :links="sections.essentials"
-      ></registry-list>
-      <registry-list
-        title="Baby Gear"
-        :links="sections.babygear"
-      ></registry-list>
+      <registry-list title="Essentials" :links="sections.essentials"></registry-list>
+      <registry-list title="Baby Gear" :links="sections.babygear"></registry-list>
       <registry-list title="Toys" :links="sections.toys"></registry-list>
     </sub-page>
   </div>
@@ -31,13 +25,13 @@ export default {
       sections: {
         essentials: [],
         babygear: [],
-        toys: [],
-      },
+        toys: []
+      }
     };
   },
   beforeCreate() {
-    mongoService.findItems().then((data) => {
-      data.forEach((item) => {
+    mongoService.findItems().then(data => {
+      data.forEach(item => {
         if (!this.sections[item.section]) {
           this.sections[item.section] = [];
           console.log("Random Section: " + item.section);
@@ -45,7 +39,7 @@ export default {
         this.sections[item.section].push(item);
       });
     });
-  },
+  }
 };
 </script>
 
