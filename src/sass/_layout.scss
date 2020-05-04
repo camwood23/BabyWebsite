@@ -63,7 +63,7 @@
   top: 2rem;
   right: 2rem;
   padding: 1.5rem;
-  width: 25rem;
+  width: 5rem;
 
   display: flex;
   flex-direction: column;
@@ -89,12 +89,12 @@
 .link_list {
   display: none;
   list-style: none;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 1rem;
   align-self: flex-start;
 
   @include respond(xxsm) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   & li {
@@ -103,10 +103,10 @@
 }
 
 .active {
-  width: 30rem;
+  width: 9rem;
 
   @include respond(xxsm) {
-    width: 30rem;
+    width: 11rem;
   }
 
   & .link_list {

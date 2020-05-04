@@ -33,18 +33,28 @@ export default {
 .line {
   position: fixed;
   top: 0;
-  right: 10rem;
+  right: 11rem;
   height: 30vh;
   width: 2px;
   background-color: #000;
   margin-left: auto;
 }
 
+@media only screen and (max-width: 28.125em) {
+  .line {
+    right: 14rem;
+  }
+}
+
 .side_img {
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 35rem;
+  height: 50vh;
   transform: rotate(-20deg);
+}
+
+.heading {
+  margin-bottom: 3rem;
 }
 </style>

@@ -1,6 +1,10 @@
 <template>
   <div>
     <sub-page title="Registry">
+      <p class="info_text">
+        If you purchase an item, you can click the check mark to cross it off
+        the list
+      </p>
       <registry-list
         title="Essentials"
         :links="sections.essentials"
@@ -76,5 +80,10 @@ export default {
   right: 0;
   width: 35rem;
   transform: rotate(-20deg);
+}
+
+.info_text {
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
 </style>
