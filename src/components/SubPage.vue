@@ -13,7 +13,7 @@
 <script>
 export default {
   name: "subpage",
-  props: ["title"],
+  props: ["title"]
 };
 </script>
 
@@ -52,6 +52,7 @@ export default {
   right: 0;
   height: 50vh;
   transform: rotate(-20deg);
+  z-index: -1;
 }
 
 .heading {
