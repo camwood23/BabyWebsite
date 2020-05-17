@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+  //   @include respond(xlg) {
+  //     font-size: 55%;
+  //   }
+
+  @include respond(lg) {
+    font-size: 50%;
+  }
+
+  @include respond(md) {
+    font-size: 46%;
+  }
+
+  @include respond(sm) {
+    font-size: 43.75%;
+  }
+
+  @include respond(xsm) {
+    font-size: 35%;
+    -webkit-text-size-adjust: none;
+  }
+
+  @include respond(xxsm) {
+    font-size: 25%;
+  }
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
